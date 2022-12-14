@@ -1,3 +1,147 @@
+$background: #484D6D;
+$blue: #2C365E;
+$purple: #2B193D;
+$green: #4B8F8C;
+$pink: #C5979D;
+$white: white;
+
+*{
+  box-sizing: border-box;
+}
+
 body{
-    background-color: #ccc;
+    color: $white;
+    background-color: $background;
+}
+main{
+    max-width: 1200px;
+    align-items: center;
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.relative{
+  position: relative;
+}
+header{
+    position: relative;
+    background-color: $blue;
+    height: 100px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 10px 20px $blue, 
+    0 6px 6px $purple;
+    border-bottom: double $purple 2px;
+
+    &>div{
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+    width: 100%;
+    }
+
+    .vertical-line{
+    border-right: 2px solid $green;
+    padding-left: 10px;
+  }
+  #contact-div{
+    padding-left: 10px;
+  }
+  #contact-container{
+    position: absolute;
+    right: 3%;
+  }
+}
+nav{
+  position: relative;
+  height: 70px;
+  justify-content: right;
+    background-color: $green;
+    img{
+      border-radius: 50%;
+      height: 200px;
+        position: absolute;
+        left: -10px;
+        top: -65px;
+    }
+    a{
+      font-size: 1.2em;
+      text-decoration: none;
+      color: $white;
+      margin-right: 8%;
+      line-height: 70px;
+      &:last-child{
+        margin-right: 3%;
+      }
+    }    
+}
+#section-one{
+  margin-top: 100px;
+  div.form-outside-container{
+    display: flex;
+  }
+}
+h1{
+  font-size: 60px;
+}
+#job-description-section-one{
+  line-height: 40px;
+  font-size: 1.5em;
+  margin-top: 40px;
+  max-width: 620px;
+}
+#form-outside-container{
+  min-width: 400px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: $white;
+  color: #4B8F8C;
+  &>div{
+    text-align: center;
+    min-height: 480px;
+    margin: 10px;
+    border: 2px solid #C5979D;
+  }
+  h2{
+    margin-top: 10px;
+  }
+}
+#form-title{
+font-size: 30px;
+}
+#estimate-form{
+  width: 340px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dotted grey;
+}
+#learn-more-button{
+  background-color: $green;
+  border-radius: 20px;
+  height: 80px;
+width: 250px;
+font-size: 30px;
+color: $white;
+margin-top: 40px;
+}
+input{
+  height: 50px;
+  min-width: 260px;
+  margin-top: 47.2px;
+}
+
+#submit-button{
+  background-color: $green;
+  color: $white;
+  width: 260px;
+  height: 50px;
+  margin-top: 30px;
+margin-bottom: 10px;
 }
